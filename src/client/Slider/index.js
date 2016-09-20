@@ -1,7 +1,7 @@
 var yo = require('yo-yo')
 
 var el = yo`
-  <div class="Slider main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
+  <div class="Slider main-carousel" data-flickity='{ "cellAlign": "left", "contain": true, "autoPlay": true }'>
     <div style="background: darkorange" class="Slider-slide carousel-cell">
       <img src="article-slide-1.jpg" class="Slider-image"/><a href="#" class="Slider-link">
       <h3 class="Slider-title">Koyomimonogatari chapter 12</h3>
