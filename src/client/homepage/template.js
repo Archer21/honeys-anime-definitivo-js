@@ -1,10 +1,11 @@
 var yo = require('yo-yo')
 var featured = require('./../Featured')
 var entries = require('./../Entries')
+var Tags = require('./../Tags')
 var recommendations = require('./components/AnimeRecomendations')
 var layout = require('./../layout')
 
-module.exports = function (newEntries, animes) {
+module.exports = function (newEntries, animes, tags) {
   var el = yo`
     <div>
       ${featured}
@@ -12,6 +13,7 @@ module.exports = function (newEntries, animes) {
         ${entries(newEntries)}
         ${recommendations(animes)}
       </div>
+      ${}
     </div>
   `
   return layout(el)

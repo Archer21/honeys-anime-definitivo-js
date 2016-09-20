@@ -52,33 +52,28 @@ var animes = [
     image: "lovelive-small.jpg",
     chapters: 25,
     publishDate: new Date()
-  },
-  {
-    title: "Shokugeky no souma",
-    image: 'shokugeky-small.jpg',
-    chapters: 25,
-    publishDate: new Date()
-  },
-  {
-    title: "Natsuyuki Rendezvous",
-    image: "natsuyuki-rendezvous-small.jpg",
-    chapters: 12,
-    publishDate: new Date()
-  },
-  {
-    title: "Love Live",
-    image: "lovelive-small.jpg",
-    chapters: 25,
-    publishDate: new Date()
   }
 ]
 
+var tags = [
+  'Comedy', 'Anime Chart',
+  'Anime Expo', 'Cosplay',
+  'Characters', 'Anime Winter',
+  'Comedy', 'Anime Chart',
+  'Anime Expo', 'Cosplay',
+  'Characters', 'Anime Winter',
+  'Comedy', 'Anime Chart',
+  'Anime Expo', 'Cosplay',
+  'Characters', 'Anime Winter',
+  'Comedy', 'Anime Chart',
+  'Anime Expo', 'Cosplay',
+  'Characters', 'Anime Winter'
+]
 page('/', Header, function () {
   var layout = document.getElementById('layout')
   var footer = document.getElementById('footer')
-  empty(layout).appendChild(template(entries, animes))
+  empty(layout).appendChild(template(entries, animes, tags))
   empty(footer).appendChild(Footer)
-
 })
 
 
