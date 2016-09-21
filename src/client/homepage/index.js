@@ -72,8 +72,8 @@ var tags = [
 page('/', Header, function () {
   var layout = document.getElementById('layout')
   var footer = document.getElementById('footer')
-  empty(layout).appendChild(template(entries, animes, tags))
-  empty(footer).appendChild(Footer)
+  empty(layout).appendChild(template(entries, animes))
+  empty(footer).appendChild(Footer(tags))
 })
 
 

@@ -1,13 +1,27 @@
 var yo = require('yo-yo')
+var tag = require('./components/Tag')
 
-var el = yo`
-  <div class="Tags">
-    <ul class="Tags-list">
-      <li class="Tags-listItem">
-        <a class="Tags-itemLink">Comedia</a>
-      </li>
-    </ul>
-  </div>
-`
+module.exports = function tags (tags) {
+  return yo`
+    <div class="Tags">
+      <ul class="Tags-list">
+        ${
+          tags.map(function (item) {
+            return tag(item)
+          })
+        }
+      </ul>
+    </div>
+  `
+}
 
-module.exports = el
+
+
+
+
+
+
+
+
+
+
