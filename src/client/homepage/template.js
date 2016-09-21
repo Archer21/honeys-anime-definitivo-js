@@ -2,7 +2,7 @@ var yo = require('yo-yo')
 var featured = require('./../Featured')
 var entries = require('./../Entries')
 var tags = require('./../Tags')
-var recommendations = require('./components/AnimeRecomendations')
+var recommendations = require('./../Recomendations')
 var layout = require('./../layout')
 
 module.exports = function (newEntries, animes, tags) {

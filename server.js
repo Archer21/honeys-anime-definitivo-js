@@ -12,10 +12,6 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
-app.get('/test', (req, res) => {
-  res.render('index')
-})
-
 let server = http.createServer(app)
 
 server.listen(PORT, () => {

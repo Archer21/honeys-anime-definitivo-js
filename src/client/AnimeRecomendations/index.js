@@ -1,5 +1,5 @@
 var yo = require('yo-yo')
-var anime = require('./../../../Anime')
+var anime = require('./../Anime')
 
 module.exports = function (recommendations) {
   return yo`
