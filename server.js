@@ -12,6 +12,14 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+app.get('/signin', (req, res) => {
+  res.render('index')
+})
+
+app.get('/signup', (req, res) => {
+  res.render('index')
+})
+
 let server = http.createServer(app)
 
 server.listen(PORT, () => {
