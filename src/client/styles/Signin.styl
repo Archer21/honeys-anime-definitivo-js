@@ -5,8 +5,9 @@
   justify-content space-between
   
   &-imageContainer
-    width 50%
-    padding 1em
+    width 45%
+    height 44em
+    // padding 1em
     box-sizing border-box
     
   &-image
@@ -17,19 +18,16 @@
     display flex
     flex-direction column
     align-self center
-  
+    padding 1em 2em
+    background-color formBackground
+    
   &-title
     font-size 2.5em
     color main
-    padding 1em
+    padding 0.5em 1em
     
   &-facebook
-    padding 1em
-    background link
-    font-size: 1.2em
-    color white
-    text-align center
-    margin-bottom 1em
+    formButton()
 
   &-form
     display flex
@@ -40,9 +38,26 @@
     margin 1em 0
   
   &-submit
-    background-color link
-    color white
-    padding .8em
-    font-size 1.2em
-    text-transform uppercase
+    formButton()
+    
+    
+  &-message
+    text-align center
+    font-weight bold
+    font-size 1.1em
     margin 1em 0
+    
+  &-register
+    color link
+  
+    &:hover
+      text-decoration underline 
+    
+    
+    
+    
+    
+    
+    
+    
+    

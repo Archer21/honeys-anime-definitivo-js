@@ -13,6 +13,8 @@ var el = yo`
         <input class="Signin-input" type="password" placeholder="Contraseña"/>
         <input class="Signin-submit" type="submit" value="Iniciar Sesion" />
       </form>
+      
+      <p class="Signin-message">No tienes una cuenta? <a class="Signin-register" href="#">Registrate</a></p>
     </div>
   </div>
 `
