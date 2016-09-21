@@ -1,10 +1,8 @@
 var page = require('page')
-var empty = require('empty-element')
-var template = require('./template')
-var Header = require('./../Header')
-var Footer = require('./../Footer')
-
-var entries = [
+var navigation = require('./Navigation')
+var entries = require('./Entries')
+var slider = require('./Slider')
+var items = [
   {
     title: "Cartelera de anime del Otoño 2016",
     image: "entrie.jpg",
@@ -35,47 +33,14 @@ var entries = [
   }
 ]
 
-var animes = [
-  {
-    title: "Shokugeky no souma",
-    image: 'shokugeky-small.jpg',
-    chapters: 25,
-    publishDate: new Date()
-  },
-  {
-    title: "Natsuyuki Rendezvous",
-    image: "natsuyuki-rendezvous-small.jpg",
-    chapters: 12,
-    publishDate: new Date()
-  },
-  {
-    title: "Love Live",
-    image: "lovelive-small.jpg",
-    chapters: 25,
-    publishDate: new Date()
-  }
-]
-
-var tags = [
-  'Comedy', 'Anime Chart',
-  'Anime Expo', 'Cosplay',
-  'Characters', 'Anime Winter',
-  'Comedy', 'Anime Chart',
-  'Anime Expo', 'Cosplay',
-  'Characters', 'Anime Winter',
-  'Comedy', 'Anime Chart',
-  'Anime Expo', 'Cosplay',
-  'Characters', 'Anime Winter',
-  'Comedy', 'Anime Chart',
-  'Anime Expo', 'Cosplay',
-  'Characters', 'Anime Winter'
-]
-page('/', Header, function () {
-  var layout = document.getElementById('layout')
-  var footer = document.getElementById('footer')
-  empty(layout).appendChild(template(entries, animes))
-  empty(footer).appendChild(Footer(tags))
+page('/test', function () {
+  var el = document.querySelector('body')
+  el.appendChild(navigation)
+  el.appendChild(entries(items))
+  el.appendChild(slider)
 })
+
+
 
 
 
