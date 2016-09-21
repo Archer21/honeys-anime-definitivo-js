@@ -3,7 +3,7 @@ var yo = require('yo-yo')
 var el = yo`
   <div class="Signin">
     <div class="Signin-imageContainer">
-      <img class="Signin-image" src="nishikino-maki.png" />
+      <img class="Signin-image" src="signin.png" />
     </div>
     <div class="Signin-body">
       <h1 class="Signin-title">Honey's Anime</h1>
@@ -14,7 +14,7 @@ var el = yo`
         <input class="Signin-submit" type="submit" value="Iniciar Sesion" />
       </form>
       
-      <p class="Signin-message">No tienes una cuenta? <a class="Signin-register" href="#">Registrate</a></p>
+      <p class="Signin-message">No tienes una cuenta? <a class="Signin-register" href="/signup">Registrate</a></p>
     </div>
   </div>
 `
